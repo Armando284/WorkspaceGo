@@ -11,14 +11,6 @@ func main() {
 		return
 	}
 
-	// TODO: Set executable file in system env path
-	// file, err := os.Getwd()
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	// file = fmt.Sprintf(`%s\wkgo.exe`, file)
-	// fmt.Printf(file)
-
 	// Load configurations to cache
 	getConfig()
 
@@ -36,7 +28,7 @@ func main() {
 		}
 	case "config":
 		{
-			getConfig()
+			showConfig()
 		}
 	case "root":
 		{
