@@ -22,8 +22,12 @@ func setProjectsRoot(rootDir string) {
 }
 
 func showConfig() {
-	res := getConfig()
-	fmt.Println(res)
+	configs := getConfig()
+	fmt.Println("{")
+	for key, value := range configs {
+		fmt.Printf(`    %s: "%s",%s`, key, value, "\n")
+	}
+	fmt.Println("}")
 }
 
 func getProjectsRoot() {
