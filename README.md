@@ -31,6 +31,10 @@ Never happened to you that every time you are going to start working on your pro
 1. Go into the project folder and execute in a terminal `go build -o wkgo.exe`, you must have golang installed for this
 2. Open your terminal at the root of the project and execute the program. Ex: `.\wkgo.exe`
 3. If everything went well you should see a help message
+4. For submitting changes with a pull request use the utility `gp.sh`
+5. The utility will test the module, build it and push the changes to the origin main
+6. To use it don't forget to make it executable by opening a Power Shell terminal and running this command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+7. Then just use the utility after committing all your changes
 
 ### TODO
 
