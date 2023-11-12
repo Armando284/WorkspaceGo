@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the absolute path to the Go executable
-GO_EXECUTABLE="\"/mnt/c/Program Files/Go/bin/go.exe\""
+GO_EXECUTABLE="\"/c/Program Files/Go/bin/go.exe\""
 
 # Run tests
 eval $GO_EXECUTABLE test ./...
