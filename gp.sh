@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# Set the absolute path to the Go executable
+GO_EXECUTABLE="C:\Program Files\Go\bin"
+
 # Run tests
-go test ./...
+$GO_EXECUTABLE test ./...
 
 # Build the executable
-go build -o ./output/wkgo.exe ./...
+$GO_EXECUTABLE build -o ./output/wkgo.exe ./...
 
 # Check if the build was successful
 if [ $? -eq 0 ]; then
